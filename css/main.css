@@ -1,0 +1,355 @@
+html, body, main {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  overflow: hidden
+}
+
+.school {
+  color: #D73F09;
+  /* font-size: 15px; */
+  text-shadow: 0 0 3px #ffffff;
+  visibility: visible;
+  /*   z-index: 400 !important; */
+}
+.school-marker {
+  width: 80px;
+}
+
+.school-marker>b {
+  font-family: 'Titillium Web', sans-serif;
+}
+.fa-school:hover {
+  opacity: 0.8;
+}
+.leaflet-tooltip.feature-label {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 0 0 2px #FFFFFF;
+    color: black;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: url('../img/loading.gif') 50% 50% no-repeat white;
+  opacity: 1;
+}
+
+div#footer>div {
+  margin-bottom: 10px
+}
+
+
+#map {
+  position: relative;
+  width: 75%;
+  height: 90%;
+  top: 10%;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  margin: 0;
+  background: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  overflow: hidden
+}
+
+.leaflet-control-layers {
+  color: white !important;
+  background-color: none;
+  padding: 6px 8px;
+  border: none !important;
+  background: #343a40 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+}
+
+.leaflet-control-zoom, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  color: white !important;
+  padding: 0px !important;
+  background-color: none;
+  border: none !important;
+  background: #343a40 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+}
+
+.c3-legend-background {
+  fill: transparent;
+  stroke: transparent;
+}
+
+/* Responsive css */
+
+#infobuttons{
+  font-size: 1vw;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.c3 text {
+  font-size: .75vw;
+}
+
+#textboxes {
+  position: absolute;
+  width: 75%;
+  top: 0%;
+  bottom: 90%;
+  left: 25%;
+  z-index: 1000;
+  background: #343a40;
+  color: white;
+  opacity: 1;
+  padding: 15px 15px 15px 15px;
+}
+
+#info {
+  position: absolute;
+  width: 25%;
+  height: 100vh;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  z-index: 999;
+  background: #343a40;
+  color: white;
+  opacity: 1;
+  padding: 15px 15px 15px 15px;
+}
+
+.custom-select {
+  position: relative;
+  /* float: right; */
+  /* width: 25%; */
+  color: white;
+  margin-left: 10px;
+  margin-right: 20px;
+  background-color: grey;
+  border: 1px solid grey;
+  padding: 5px;
+}
+.btn-secondary{
+    margin-left: 15px;
+    background-color: grey;
+}
+.card-deck .card {
+  background: #343a40;
+  padding: 1px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card-body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+}
+
+.charts{
+  height: 10%;
+}
+
+.card-text {
+font-size: 2vw !important
+}
+
+.card-title {
+  color: lightgray;
+  font-size: 1vw;
+  margin-bottom: 0rem;
+  font-weight: bold;
+}
+
+#legend-panel {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 10%;
+  height: 20px;
+  z-index: 1000;
+  background: #343a4000;
+}
+
+#legend-title {
+  position: fixed;
+  bottom: 30px;
+  left: 86.5%;
+  width: 15%;
+  height: 20px;
+  z-index: 1000;
+  background: #343a4000;
+}
+.legend .card {
+  background: #343a4000;
+  padding: 0;
+}
+
+.legend .card-title {
+  font-size: 1vw;
+  /* text-align: left; */
+  /* padding-left: 4px; */
+  /* background: #343a4000; */
+}
+
+#title {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+span {
+  margin-right: 20px;
+}
+
+#info a {
+  color: white;
+}
+
+#info a:hover {
+  color: white;
+  opacity: 0.3;
+}
+
+#placename {
+  font-size: 2vw;
+  position: relative;
+  /* top: -20px; */
+  font-family: 'Oswald', sans-serif;
+}
+
+#hint {
+  position: relative;
+  top: -20px;
+  width: 5000px;
+  color: gray;
+  font-size: .75vw;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.counts {
+  margin-top: 0px;
+}
+
+text {
+  fill: gray
+}
+
+.tick line {
+  stroke: gray;
+}
+
+.c3-axis path {
+  stroke: gray;
+}
+
+.c3-bar {
+  /* fill: #dc3545 !important; */
+}
+.name {
+  background-color: black;
+  color: black
+}
+
+.value {
+  background-color: black;
+  color: black
+}
+
+#stuChart {
+  position: relative;
+}
+
+#awardChart {
+  position: relative;
+}
+#chart {
+  position: relative;
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: super;
+  opacity: 1;
+  color: #737373;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2px;
+  top: 100%;
+  left: 100%;
+  visibility: hidden;
+  line-height: 150%;
+  width: 200px;
+  margin-left: -170px;
+  /* Use half of the width (120/2 = 60), to center the tooltip */
+  margin-bottom: 5px;
+  background-color: gray;
+  color: #fff;
+  font-size: 12px !important;
+  /* text-align: center; */
+  padding: 5px;
+  border-radius: 2px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  opacity: 0.8;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.year-title{
+  margin-bottom: 15%;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Dropdown Button */
+.dropdown{
+  position: relative;
+  color:lightgrey;
+  margin-top: 5%;
+}
+
+.dropdown-item{
+  margin: 0;
+  color: #6c757d;
+  font-size: .75vw;
+}
+
+.dropdown-menu{
+  color: lightgray;
+  padding: 0;
+  background-color: #6c757d;
+}
+.dropdown-header{
+  color: #fff;
+}
