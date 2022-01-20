@@ -165,369 +165,18 @@
         <div class="container-fluid">
           <!-- Content Row -->
           <div class="row">
-            <div class="col-lg-3 mb-2">
+            <div class="col-lg-3 mb-2 fViz">
               <div class="card text-white shadow">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">
-                    <span id="placename">Oregon State</span>
-                    <span class="fViz">by-the-numbers</span><span class="pViz">Outdoor School Performance Indicators</span>
+                    <span class="placename">Oregon State</span>
+                    <span class="fViz">by-the-numbers</span>
                     <br>
                     for <span class="yearTitle">2019-20</span>
                   </h6>
                 </div>
-                <div id="deck-1" class="card-deck counts pViz">
-                  <div class="card">
-                    <!-- tab list -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="context-tab" data-bs-toggle="tab" href="#context" data-bs-target="#context" type="button" role="tab" aria-controls="context" aria-selected="false">
-                          Lesson Context
-                        </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="content-tab" data-bs-toggle="tab" href="#contentTab" data-bs-target="#contentTab" type="button" role="tab" aria-controls="contentTab" aria-selected="true">
-                          Lesson Content
-                        </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="is-tab" data-bs-toggle="tab" href="#is" data-bs-target="#is" type="button" role="tab" aria-controls="is" aria-selected="true">
-                          Instructional Strategy
-                        </button>
-                      </li>
-                    </ul>
-                    <!-- tab content -->
-                    <div class="tab-content " id="myTabContent">
-                      <!--lesson context tab -->
-                      <div class="tab-pane fade show active" id="context" role="tabpanel" aria-labelledby="context-tab">
-                        <div class="card shadow contextViz">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Soil, water, plants, animals
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="soilChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow contextViz">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Timber, agriculture, and other natural resources
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="timberChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow contextViz">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Nature, natural resources, economic development, and career opportunities
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="natureChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow contextViz">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Oregon's environment and natural resources
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="orEnviChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow contextViz">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Student leadership, critical thinking, and decision-making skills
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="stuLeadChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--lesson content tab -->
-                      <div class="tab-pane fade" id="contentTab" role="tabpanel" aria-labelledby="content-tab">
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              STEM/Natural History
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="stemChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Food/Agriculture/Forestry
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="foodChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Sustainability/Environmental Education
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="enviEduChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Social studies/Geography
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="ssChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Visual and Performing Arts
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="vpArtChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Physical/Health/Experiential Education
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="peChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Social-Emotional Learning
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="seChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Careers/Workforce
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="careerChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Oregon Studies/Multi-cultural Education
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="osmcChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--Instructional Strategy tab -->
-                      <div class="tab-pane fade" id="is" role="tabpanel" aria-labelledby="is-tab">
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Multimodal
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="mmChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Collaborative/Cooperative
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="ccChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Learner-centered
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="lcChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Investigative
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="invChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Reflective
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="refChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Relevance
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="relChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card shadow">
-                          <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">
-                              Interdisciplinary
-                              <a data-toggle="modal" data-target="#stuParModal">
-                                <i class="info fas fa-question-circle"></i>
-                              </a>
-                            </h6>
-                          </div>
-                          <div class="card-body">
-                            <div class="chart-area">
-                              <div id="interChart" class="chart-height yearColor"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="row">
-
-                  <!-- Earnings (Monthly) Card Example -->
-                  <div class="col-xl-12 col-md-12 fViz">
+                  <div class="col-xl-12 col-md-12">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -550,10 +199,8 @@
                     </div>
                   </div>
                 </div>
-
-
                 <div class="row">
-                  <div class="col-xl-12 col-md-12 fViz">
+                  <div class="col-xl-12 col-md-12">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -574,11 +221,8 @@
                     </div>
                   </div>
                 </div>
-
-
-                <!-- Color System -->
                 <div class="row">
-                  <div class="col-lg-12 fViz">
+                  <div class="col-lg-12">
                     <div class="card shadow">
                       <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">
@@ -597,7 +241,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-12 fViz">
+                  <div class="col-lg-12">
                     <div class="card shadow">
                       <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">
@@ -616,7 +260,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-12 fViz">
+                  <div class="col-lg-12">
                     <div class="card shadow">
                       <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">
@@ -637,16 +281,730 @@
               </div>
             </div>
 
+            <div class="col-lg-8 mb-2 pViz">
+              <div class="card text-white shadow">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">
+                    <span class="placename">Oregon State</span>
+                    <span class="pViz">Outdoor School Performance Indicators</span>
+                  </h6>
+                </div>
+                <div id="deck-1" class="card-deck counts pViz">
+                  <div class="card">
+                    <!-- tab list -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="context-tab" data-bs-toggle="tab" href="#context" data-bs-target="#context" type="button" role="tab" aria-controls="context" aria-selected="false">
+                          Lesson Context
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="content-tab" data-bs-toggle="tab" href="#contentTab" data-bs-target="#contentTab" type="button" role="tab" aria-controls="contentTab" aria-selected="true">
+                          Lesson Content
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="is-tab" data-bs-toggle="tab" href="#is" data-bs-target="#is" type="button" role="tab" aria-controls="is" aria-selected="true">
+                          Instruction and Support
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dei-tab" data-bs-toggle="tab" href="#dei" data-bs-target="#dei" type="button" role="tab" aria-controls="dei" aria-selected="true">
+                          Equity, Diversity, and Inclusion
+                        </button>
+                      </li>
+                    </ul>
+                    <!-- tab content -->
+                    <div class="tab-content mt-1" id="myTabContent">
+                      <!--lesson context tab -->
+                      <div class="tab-pane fade show active" id="context" role="tabpanel" aria-labelledby="context-tab">
+                        <div class="card-header py-3 pViz">
+                          <h6 class="m-0 font-weight-bold text-primary">
+                            Participating schools were asked to rate the following <span id="contextContentText"></span> categories according to their
+                            prevalence/significance within their school’s outdoor school program, with zero (0) being no prevalence/significance,
+                            and ten (10) being substantial prevalence/significance.
+                          </h6>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow contextViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Soil, water, plants, animals
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="soilChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow contextViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Timber, agriculture, and other natural resources
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="timberChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow contextViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Nature, natural resources, economic development, and career opportunities
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="natureChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow contextViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Oregon's environment and natural resources
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="orEnviChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <center>
+                          <div class="col-lg-6 card shadow contextViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Student leadership, critical thinking, and decision-making skills
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="stuLeadChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </center>
+                      </div>
+                      <!--lesson content tab -->
+                      <div class="tab-pane fade" id="contentTab" role="tabpanel" aria-labelledby="content-tab">
+                        <div class="card-header py-3 pViz">
+                          <h6 class="m-0 font-weight-bold text-primary">
+                            Participating schools were asked to rate the following <span id="contextContentText"></span> categories according to their
+                            prevalence/significance within their school’s outdoor school program, with zero (0) being no prevalence/significance,
+                            and ten (10) being substantial prevalence/significance.
+                          </h6>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                STEM/Natural History
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="stemChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Food/Agriculture/Forestry
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="foodChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Sustainability/Environmental Education
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="enviEduChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Social studies/Geography
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="ssChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Visual and Performing Arts
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="vpArtChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Physical/Health/Experiential Education
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="peChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Social-Emotional Learning
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="seChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Careers/Workforce
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="careerChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <center>
+                          <div class="col-lg-6 card shadow">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Oregon Studies/Multi-cultural Education
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="osmcChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </center>
+                      </div>
+                      <!--Instructional Strategy tab -->
+                      <div class="tab-pane fade" id="is" role="tabpanel" aria-labelledby="is-tab">
+                        <!-- tab list -->
+                        <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="iStrat-tab" data-bs-toggle="tab" href="#iStrat" data-bs-target="#iStrat" type="button" role="tab" aria-controls="iStrat" aria-selected="false">
+                              Instructional Strategies
+                            </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sPart-tab" data-bs-toggle="tab" href="#sPart" data-bs-target="#sPart" type="button" role="tab" aria-controls="sPart" aria-selected="true">
+                              Support Partners
+                            </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="iPart-tab" data-bs-toggle="tab" href="#iPart" data-bs-target="#iPart" type="button" role="tab" aria-controls="iPart" aria-selected="true">
+                              Instruction Partners
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent2">
+                          <div class="tab-pane fade show active" id="iStrat" role="tabpanel" aria-labelledby="iStrat-tab">
+                            <div class="card-header py-3 pViz">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Participating schools were asked to rate the following Instructional Strategies categories according to their
+                                prevalence/significance within their school’s outdoor school program, with zero (0) being no prevalence/significance,
+                                and ten (10) being substantial prevalence/significance.
+                              </h6>
+                            </div>
+                            <div id="deck-2" class="card-deck counts">
+                              <div class="card shadow">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Multimodal
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="mmChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card shadow">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Collaborative/Cooperative
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="ccChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="deck-2" class="card-deck counts">
+                              <div class="card shadow">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Learner-centered
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="lcChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card shadow">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Investigative
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="invChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="deck-2" class="card-deck counts">
+                              <div class="card shadow">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Reflective
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="refChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card shadow">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Relevance
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="relChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <center>
+                              <div class="col-lg-6 card shadow">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Interdisciplinary
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="interChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </center>
+                          </div>
+                          <div class="tab-pane fade show" id="sPart" role="tabpanel" aria-labelledby="sPart-tab">
+                            <div class="card-header py-3 pViz">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                If the participating schools identified a supporting partner group as involved in their
+                                outdoor school program, they were then asked to state if that supporting partner group
+                                provided instruction to students while at outdoor school.
+                              </h6>
+                            </div>
+                            <div id="deck-2" class="card-deck counts">
+                              <div class="card shadow supViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    High School Volunteers
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="supHSChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card shadow supViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Trained staff
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="tsChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="deck-2" class="card-deck counts">
+                              <div class="card shadow supViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Natural resource specialist
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="nrsChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card shadow supViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Community-based Organization
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="cboChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade show" id="iPart" role="tabpanel" aria-labelledby="iPart-tab">
+                            <div class="card-header py-3 pViz">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Participating schools were asked to identify which of the partners listed below were involved
+                                as supporting partners in their outdoor school program.
+                              </h6>
+                            </div>
+                            <div id="deck-2" class="card-deck counts">
+                              <div class="card shadow instViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    High School Volunteers
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="instHSChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card shadow instViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Trained staff
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="instTSChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="deck-2" class="card-deck counts">
+                              <div class="card shadow instViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Natural resource specialist
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="instNRSChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card shadow instViz">
+                                <div class="card-header py-3">
+                                  <h6 class="m-0 font-weight-bold text-primary">
+                                    Community-based Organization
+                                    <a data-toggle="modal" data-target="#stuParModal">
+                                      <i class="info fas fa-question-circle"></i>
+                                    </a>
+                                  </h6>
+                                </div>
+                                <div class="card-body">
+                                  <div class="chart-area">
+                                    <div id="instCBOChart" class="chart-height yearColor"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--DEI tab -->
+                      <div class="tab-pane fade show" id="dei" role="tabpanel" aria-labelledby="dei-tab">
+                        <div class="card-header py-3 pViz">
+                          <h6 class="m-0 font-weight-bold text-primary">
+                            Participating schools were asked to identify the historically under-resourced populations participating
+                            in their outdoor school program and how they ensured those students could participate, and wanted to
+                            participate in outdoor school.
+                          </h6>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Rural
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="ruralChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Low Socio-economics
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="lseChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                American Indian/Alaska Native
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="aianChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Asian
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="asianChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Pacific Islander
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="nhpiChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Black/African American
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="blackChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="deck-2" class="card-deck counts">
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Hispanic/Latin(x)
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="latinChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card shadow deiViz">
+                            <div class="card-header py-3">
+                              <h6 class="m-0 font-weight-bold text-primary">
+                                Middle Eastern/North African
+                                <a data-toggle="modal" data-target="#stuParModal">
+                                  <i class="info fas fa-question-circle"></i>
+                                </a>
+                              </h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="chart-area">
+                                <div id="menaChart" class="chart-height yearColor"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <!-- Content Column -->
-
-            <div class="col-lg-7 mb-2">
+            <!-- Fiscal Viz map content -->
+            <div id="mapColumn" class="col-lg-7 mb-2">
               <div class="card text-white shadow">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Totals Since Start of Program</h6>
                   <h6 class="m-0 font-weight-bold text-primary">(July 2017)</h6>
                 </div>
-                <div class="row">
+                <div class="row fViz">
                   <!-- Totals - Students Funded Card Example -->
                   <div class="col-xl-6 col-md-6 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
@@ -691,6 +1049,51 @@
                     </div>
                   </div>
                 </div>
+                <div class="row pViz">
+                  <!-- Totals - Students Funded Card Example -->
+                  <div class="col-xl-6 col-md-6 mb-0">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <i class="fas fa-user-graduate ml-3 fa-2x text-gray-300"></i>
+                          </div>
+                          <div class="col mr-2">
+                            <center>
+                              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Number of Students
+                                <a data-toggle="modal" data-target="#tsfModal"><i class="info fas fa-question-circle"></i></a>
+                              </div>
+                              <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="numStu-count"></span></div>
+                            </center>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Pending Requests Card Example -->
+                  <div class="col-xl-6 col-md-6 mb-0">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <i class="fas fa-school ml-3 fa-2x text-gray-300"></i>
+                          </div>
+                          <div class="col mr-2">
+                            <center>
+                              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Number of Schools
+                                <a data-toggle="modal" data-target="#tafModal"><i class="info fas fa-question-circle"></i></a>
+                              </div>
+                              <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="numSchools-count"></span></div>
+                            </center>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- Map -->
                 <div class="card shadow">
                   <div class="card-header py-3">
@@ -706,7 +1109,7 @@
                   </div>
                 </div>
                 <div class="card text-white shadow">
-                  <div class="card-header py-3">
+                  <div class="card-header py-3 fViz">
                     <p class="m-0 font-weight-bold text-primary">*Why isn’t my school participating?</P>
                     <p class="m-0 text-primary text-xs">
                       All schools that qualify to receive Outdoor School funds are
@@ -718,279 +1121,25 @@
                       though your district is taking full advantage of available funding.
                     </p>
                   </div>
+                  <div class="card-header py-3 pViz">
+                    <p class="m-0 font-weight-bold text-primary">*The data illustrated here were reported by teachers, providers, and other school officials.</P>
+                  </div>
                 </div>
 
               </div>
             </div>
 
-            <div class="col-lg-2 mb-2">
+            <div class="col-lg-2 mb-2 fViz">
               <div class="card">
-                <div class="card-header py-3 fViz">
+                <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Statewide by-the-numbers
                     <br>
                     for <span class="yearTitle">2019-20</span>
                   </h6>
                 </div>
-                <div id="deck-1" class="card-deck counts pViz">
-                  <div class="card">
-                    <div class="dropdown no-arrow">
-                      <a class="nav-link dropdown-toggle ml-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-lg-inline text-gray-600">Select Topic: <span id="pieTitle" class="dropdownTitle">Support Partners</span></span>
-                      </a>
-                      <div class="dropdown-menu shadow dropdownZindex" aria-labelledby="userDropdown">
-                        <center>
-                          <a class="dropdown-item" id="sp_drop" value="1">Support Partners</a>
-                          <a class="dropdown-item" id="ip_drop" value="2">Instruction Partners</a>
-                          <a class="dropdown-item" id="urc_drop" value="3">Under-resource Communities</a>
-                        </center>
-                      </div>
-                    </div>
-
-                    <div class="card shadow supViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          High School Volunteers
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="supHSChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow supViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Trained staff
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="tsChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow supViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Natural resource specialist
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="nrsChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow supViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Community-based Organization
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="cboChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow instViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          High School Volunteers
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="instHSChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow instViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Trained staff
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="instTSChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow instViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Natural resource specialist
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="instNRSChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow instViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Community-based Organization
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="instCBOChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Rural
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="ruralChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Low Socio-economics
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="lseChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          American Indian/Alaska Native
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="aianChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Asian
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="asianChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Pacific Islander
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="nhpiChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Black/African American
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="blackChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Hispanic/Latin(x)
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="latinChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Middle Eastern/North African
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="menaChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="row">
                   <!-- # of Students Card Example -->
-                  <div class="col-xl-12 col-md-12 mb-0 fViz">
+                  <div class="col-xl-12 col-md-12 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -1013,7 +1162,7 @@
                 </div>
                 <div class="row">
                   <!-- # of Schools Card Example -->
-                  <div class="col-xl-12 col-md-12 mb-0 fViz">
+                  <div class="col-xl-12 col-md-12 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -1036,7 +1185,7 @@
                 </div>
                 <div class="row">
                   <!-- $ Awarded Card Example -->
-                  <div class="col-xl-12 col-md-12 mb-0 fViz">
+                  <div class="col-xl-12 col-md-12 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -1059,7 +1208,7 @@
                 </div>
                 <div class="row">
                   <!-- # of Districts Card Example -->
-                  <div class="col-xl-12 col-md-12 mb-0 fViz">
+                  <div class="col-xl-12 col-md-12 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -1080,11 +1229,10 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="row">
 
                   <!-- Funding per student Card Example -->
-                  <div class="col-xl-12 col-md-12 mb-0 fViz">
+                  <div class="col-xl-12 col-md-12 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -1109,7 +1257,7 @@
                 </div>
                 <div class="row">
                   <!-- Average # of Days Card Example -->
-                  <div class="col-xl-12 col-md-12 mb-0 fViz">
+                  <div class="col-xl-12 col-md-12 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -1132,7 +1280,7 @@
                 </div>
                 <div class="row">
                   <!-- Earnings (Monthly) Card Example -->
-                  <div class="col-xl-12 col-md-12 mb-0 fViz">
+                  <div class="col-xl-12 col-md-12 mb-0">
                     <div class="card border-left-primary shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
@@ -2324,6 +2472,7 @@
           i["pL20"].push(tpl20);
         });
 
+
         // soil context
         datasets[16].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2345,8 +2494,8 @@
                 tsoil18 += +items[0];
                 break;
             };
-
           }
+
           i["soil18"].push(tsoil18);
           i["soil19"].push(tsoil19);
           i["soil20"].push(tsoil20);
@@ -3773,11 +3922,11 @@
 
 
         if (i["name"] == "Oregon") {
-          $("#placename").text(i["name"] + " State");
+          $(".placename").text(i["name"] + " State");
 
         } else {
 
-          $("#placename").text(i["name"]);
+          $(".placename").text(i["name"]);
 
         }
 
@@ -4064,11 +4213,11 @@
 
 
         if (i["name"] == "Oregon") {
-          $("#placename").text(i["name"] + " State");
+          $(".placename").text(i["name"] + " State");
 
         } else {
 
-          $("#placename").text(i["name"]);
+          $(".placename").text(i["name"]);
 
         }
 
@@ -4223,7 +4372,7 @@
         // } else {
         $(".avgDays-count").text((place.ad[schoolYear].toFixed(2)) + " Days");
         // }
-        $("#placename").text(e.target.feature.properties.instName);
+        $(".placename").text(e.target.feature.properties.instName);
 
         stuChart.load({
           unload: true,
@@ -4406,7 +4555,7 @@
         }
 
 
-        $("#placename").text("Oregon State");
+        $(".placename").text("Oregon State");
 
         stuChart.load({
           unload: true,
@@ -4436,10 +4585,8 @@
       mymap.on('click', onMapClick);
 
       stateCounts(oregon);
-
-      // windowHeight = $(window).height()
-      //
-      // chartHeight = windowHeight/6
+      // fViz Charts
+      // Annual Count of Students Chart
       stuChart = c3.generate({
         size: {
           // height: chartHeight,
@@ -4503,7 +4650,7 @@
         },
         bindto: "#stuChart"
       });
-
+      // Annual $ awarded chart
       awardChart = c3.generate({
         size: {
           // height: chartHeight,
@@ -4563,7 +4710,7 @@
         },
         bindto: "#awardChart"
       });
-
+      //  Annual program length chart
       chart = c3.generate({
 
         data: {
@@ -4634,6 +4781,7 @@
         bindto: "#chart"
       });
 
+      // pViz Charts
       soilChart = c3.generate({
         data: {
           columns: [
@@ -6124,8 +6272,9 @@
         mymap.removeLayer(ods1920);
         mymap.removeLayer(schools1718);
         mymap.removeLayer(schools1819);
-        mymap.addLayer(schools1920);
-
+        if ($("#dataDropdown").text() == "Fiscals") {
+          mymap.addLayer(schools1920);
+        }
         switch (geoLayer) {
           case 1:
             mymap.addLayer(county1920);
@@ -6156,7 +6305,7 @@
         $(".days-count").text(daysAttended1920).digits();
         $(".fpsState-count").text("$" + (oregon.reqs[schoolYear]).toFixed(2)).digits();
         $(".awardedState-count").text("$" + (oregon.treq[schoolYear]).toFixed(2)).digits();
-        $("#placename").text("Oregon State");
+        $(".placename").text("Oregon State");
       });
 
 
@@ -6178,8 +6327,10 @@
         mymap.removeLayer(ods1920);
         mymap.removeLayer(schools1718);
         mymap.removeLayer(schools1920);
-        mymap.addLayer(schools1819);
-
+        if ($("#dataDropdown").text() == "Fiscals") {
+          mymap.addLayer(schools1819);
+        }
+        // Add
         switch (geoLayer) {
           case 1:
             mymap.addLayer(county1819);
@@ -6204,7 +6355,7 @@
         $(".fpsState-count").text("$" + (oregon.reqs[schoolYear]).toFixed(2)).digits();
         $(".awardedState-count").text("$" + (oregon.treq[schoolYear]).toFixed(2)).digits();
         $(".avgDaysState-count").text((oregon.ad[schoolYear]).toFixed(2) + " Days");
-        $("#placename").text("Oregon State");
+        $(".placename").text("Oregon State");
       });
 
       $("#y201718").on("click", function() {
@@ -6226,9 +6377,11 @@
         mymap.removeLayer(ods1920);
         mymap.removeLayer(schools1819);
         mymap.removeLayer(schools1920);
-
+        if ($("#dataDropdown").text() == "Fiscals") {
+          mymap.addLayer(schools1718);
+        }
         // Add selected geo layer for selected year
-        mymap.addLayer(schools1718);
+
         switch (geoLayer) {
           case 1:
             mymap.addLayer(county1718);
@@ -6253,7 +6406,7 @@
         $(".fpsState-count").text("$" + (oregon.reqs[schoolYear]).toFixed(2)).digits();
         $(".awardedState-count").text("$" + (oregon.treq[schoolYear]).toFixed(2)).digits();
         $(".avgDaysState-count").text((oregon.ad[schoolYear]).toFixed(2) + " Days");
-        $("#placename").text("Oregon State");
+        $(".placename").text("Oregon State");
 
       });
 
@@ -6288,7 +6441,7 @@
         $("#hint").click();
         // $(".fps-count").text("$" + (oregon.reqs[schoolYear]).toFixed(2));
         // $(".avgDays-count").text((oregon.ad[schoolYear]).toFixed(2) + " Days");
-        // $("#placename").text("Oregon State");
+        // $(".placename").text("Oregon State");
 
       });
 
@@ -6323,7 +6476,7 @@
         $("#hint").click();
         // $(".fps-count").text("$" + (oregon.reqs[schoolYear]).toFixed(2));
         // $(".avgDays-count").text((oregon.ad[schoolYear]).toFixed(2) + " Days");
-        // $("#placename").text("Oregon State");
+        // $(".placename").text("Oregon State");
 
       });
 
@@ -6358,7 +6511,7 @@
         $("#hint").click();
         // $(".fps-count").text("$" + (oregon.reqs[schoolYear]).toFixed(2));
         // $(".avgDays-count").text((oregon.ad[schoolYear]).toFixed(2) + " Days");
-        // $("#placename").text("Oregon State");
+        // $(".placename").text("Oregon State");
 
       });
 
@@ -6391,24 +6544,42 @@
           default:
         }
         $("#hint").click();
-        // $(".fps-count").text("$" + (oregon.reqs[schoolYear]).toFixed(2));
-        // $(".avgDays-count").text((oregon.ad[schoolYear]).toFixed(2) + " Days");
-        // $("#placename").text("Oregon State");
       });
 
       $("#Fiscals").on("click", function() {
         $("#dataDropdown").text("Fiscals");
         $(".fViz").show();
         $(".pViz").hide();
+        $("#mapColumn").removeClass("col-lg-4");
+        $("#mapColumn").addClass("col-lg-7");
+        mymap.invalidateSize();
+        mymap.fitBounds(oregonBounds);
         $("#hint").click();
+        switch (schoolYear) {
+          case 1:
+            mymap.addLayer(schools1718);
+            break;
+          case 2:
+            mymap.addLayer(schools1819);
+            break;
+          case 3:
+            mymap.addLayer(schools1920);
+            break;
+          default:
+        }
       });
       $("#Performance").on("click", function() {
         $("#dataDropdown").text("Performance");
         $(".fViz").hide();
         $(".pViz").show();
-        $(".supViz").show();
-        $(".instViz").hide();
-        $(".urcViz").hide();
+        $("#contextContentText").text("Lesson Context");
+        $("#mapColumn").removeClass("col-lg-7");
+        $("#mapColumn").addClass("col-lg-4");
+        mymap.removeLayer(schools1920);
+        mymap.removeLayer(schools1819);
+        mymap.removeLayer(schools1718);
+        mymap.invalidateSize();
+        mymap.fitBounds(oregonBounds);
         soilChart.load({
           unload: true,
           columns: [
@@ -6468,8 +6639,8 @@
           ],
         });
       });
-
       $("#context-tab").on("click", function() {
+        $("#contextContentText").text("Lesson Context");
         soilChart.load({
           unload: true,
           columns: [
@@ -6501,8 +6672,8 @@
           ],
         });
       });
-
       $("#content-tab").on("click", function() {
+        $("#contextContentText").text("Lesson Content");
         stemChart.load({
           unload: true,
           columns: [
@@ -6558,7 +6729,6 @@
           ],
         });
       });
-
       $("#is-tab").on("click", function() {
         mmChart.load({
           unload: true,
@@ -6603,80 +6773,7 @@
           ],
         });
       });
-
-      $("#sp_drop").on("click", function() {
-        $("#pieTitle").text("Support Partners");
-        $(".supViz").show();
-        $(".instViz").hide();
-        $(".urcViz").hide();
-        spHSChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.spHS20yes[1]],
-            ['No', oregon.spHS20no[1]],
-          ],
-        });
-        sptrChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.sptr20yes[1]],
-            ['No', oregon.sptr20no[1]],
-          ],
-        });
-        spnrChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.spnr20yes[1]],
-            ['No', oregon.spnr20no[1]],
-          ],
-        });
-        spcoChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.spco20yes[1]],
-            ['No', oregon.spco20no[1]],
-          ],
-        });
-      });
-      $("#ip_drop").on("click", function() {
-        $("#pieTitle").text("Instruction Partners");
-        $(".instViz").show();
-        $(".supViz").hide();
-        $(".urcViz").hide();
-        isHSChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.isHS20yes[1]],
-            ['No', oregon.isHS20no[1]],
-          ],
-        });
-        istrChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.istr20yes[1]],
-            ['No', oregon.istr20no[1]],
-          ],
-        });
-        isnrChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.isnr20yes[1]],
-            ['No', oregon.isnr20no[1]],
-          ],
-        });
-        iscoChart.load({
-          unload: true,
-          columns: [
-            ['Yes', oregon.isco20yes[1]],
-            ['No', oregon.isco20no[1]],
-          ],
-        });
-      });
-      $("#urc_drop").on("click", function() {
-        $("#pieTitle").text("Under-resource Communities");
-        $(".urcViz").show();
-        $(".supViz").hide();
-        $(".instViz").hide();
+      $("#dei-tab").on("click", function() {
         ruralChart.load({
           unload: true,
           columns: [
@@ -6734,6 +6831,111 @@
           ],
         });
       });
+      $("#iStrat-tab").on("click", function() {
+        mmChart.load({
+          unload: true,
+          columns: [
+            oregon.mm18, oregon.mm19, oregon.mm20
+          ],
+        });
+        colcooChart.load({
+          unload: true,
+          columns: [
+            oregon.colcoo18, oregon.colcoo19, oregon.colcoo20
+          ],
+        });
+        lcChart.load({
+          unload: true,
+          columns: [
+            oregon.lc18, oregon.lc19, oregon.lc20
+          ],
+        });
+        invChart.load({
+          unload: true,
+          columns: [
+            oregon.inv18, oregon.inv19, oregon.inv20
+          ],
+        });
+        reflChart.load({
+          unload: true,
+          columns: [
+            oregon.refl18, oregon.refl19, oregon.refl20
+          ],
+        });
+        releChart.load({
+          unload: true,
+          columns: [
+            oregon.rele18, oregon.rele19, oregon.rele20
+          ],
+        });
+        interdChart.load({
+          unload: true,
+          columns: [
+            oregon.interd18, oregon.interd19, oregon.interd20
+          ],
+        });
+      });
+      $("#sPart-tab").on("click", function() {
+        spHSChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.spHS20yes[1]],
+            ['No', oregon.spHS20no[1]],
+          ],
+        });
+        sptrChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.sptr20yes[1]],
+            ['No', oregon.sptr20no[1]],
+          ],
+        });
+        spnrChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.spnr20yes[1]],
+            ['No', oregon.spnr20no[1]],
+          ],
+        });
+        spcoChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.spco20yes[1]],
+            ['No', oregon.spco20no[1]],
+          ],
+        });
+      });
+      $("#iPart-tab").on("click", function() {
+        isHSChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.isHS20yes[1]],
+            ['No', oregon.isHS20no[1]],
+          ],
+        });
+        istrChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.istr20yes[1]],
+            ['No', oregon.istr20no[1]],
+          ],
+        });
+        isnrChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.isnr20yes[1]],
+            ['No', oregon.isnr20no[1]],
+          ],
+        });
+        iscoChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.isco20yes[1]],
+            ['No', oregon.isco20no[1]],
+          ],
+        });
+      });
+
 
     });
     // Tab JS
@@ -6743,7 +6945,6 @@
       triggerEl.addEventListener('click', function(event) {
         event.preventDefault()
         tabTrigger.show()
-
       })
     })
     var triggerTabList = [].slice.call(document.querySelectorAll('#content-tab'))
@@ -6752,7 +6953,6 @@
       triggerEl.addEventListener('click', function(event) {
         event.preventDefault()
         tabTrigger.show()
-
       })
     })
     var triggerTabList = [].slice.call(document.querySelectorAll('#is-tab'))
@@ -6761,20 +6961,42 @@
       triggerEl.addEventListener('click', function(event) {
         event.preventDefault()
         tabTrigger.show()
-
       })
     })
-    // Tab Interactions
-    // $("#content-tab").on("click", function() {
-    //   // hide context tabs
-    //   $(".contextViz").hide();
-    //   $(".contentViz").show();
-    // });
-    // $("#context-tab").on("click", function() {
-    //   // hide context tabs
-    //   $(".contextViz").show();
-    //   $(".contentViz").hide();
-    // });
+    var triggerTabList = [].slice.call(document.querySelectorAll('#dei-tab'))
+    triggerTabList.forEach(function(triggerEl) {
+      var tabTrigger = new bootstrap.Tab(triggerEl)
+      triggerEl.addEventListener('click', function(event) {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+    var triggerTabList = [].slice.call(document.querySelectorAll('#iStrat-tab'))
+    triggerTabList.forEach(function(triggerEl) {
+      var tabTrigger = new bootstrap.Tab(triggerEl)
+      triggerEl.addEventListener('click', function(event) {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+    var triggerTabList = [].slice.call(document.querySelectorAll('#sPart-tab'))
+    triggerTabList.forEach(function(triggerEl) {
+      var tabTrigger = new bootstrap.Tab(triggerEl)
+      triggerEl.addEventListener('click', function(event) {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+    var triggerTabList = [].slice.call(document.querySelectorAll('#iPart-tab'))
+    triggerTabList.forEach(function(triggerEl) {
+      var tabTrigger = new bootstrap.Tab(triggerEl)
+      triggerEl.addEventListener('click', function(event) {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+
+
     $(".pViz").hide();
 
     /////////////////////////
