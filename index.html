@@ -170,7 +170,7 @@
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">
                     <span id="placename">Oregon State</span>
-                    by-the-numbers
+                    <span class="fViz">by-the-numbers</span><span class="pViz">Outdoor School Performance Indicators</span>
                     <br>
                     for <span class="yearTitle">2019-20</span>
                   </h6>
@@ -986,21 +986,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card shadow urcViz">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
-                          Gender nonconforming/LGBTQ+
-                          <a data-toggle="modal" data-target="#stuParModal">
-                            <i class="info fas fa-question-circle"></i>
-                          </a>
-                        </h6>
-                      </div>
-                      <div class="card-body">
-                        <div class="chart-area">
-                          <div id="lgbtqChart" class="chart-height yearColor"></div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
                 <div class="row">
@@ -1677,7 +1662,6 @@
       d3.csv('assets/Underresource/black.csv'), //datasets[50]
       d3.csv('assets/Underresource/latinx.csv'), //datasets[51]
       d3.csv('assets/Underresource/mena.csv'), //datasets[52]
-      d3.csv('assets/Underresource/lgbtq.csv'), //datasets[53]
 
     ]).then(function(datasets) {
 
@@ -1966,9 +1950,6 @@
       var mena2018no = ["2017-18"]
       var mena2019no = ["2018-19"]
       var mena2020no = ["2019-20"]
-      var lgbtq2018no = ["2017-18"]
-      var lgbtq2019no = ["2018-19"]
-      var lgbtq2020no = ["2019-20"]
 
       var sptr2018yes = ["2017-18"]
       var sptr2019yes = ["2018-19"]
@@ -2015,9 +1996,6 @@
       var mena2018yes = ["2017-18"]
       var mena2019yes = ["2018-19"]
       var mena2020yes = ["2019-20"]
-      var lgbtq2018yes = ["2017-18"]
-      var lgbtq2019yes = ["2018-19"]
-      var lgbtq2020yes = ["2019-20"]
 
 
       var oregon = {
@@ -2163,9 +2141,6 @@
         mena18no: mena2018no,
         mena19no: mena2019no,
         mena20no: mena2020no,
-        lgbtq18no: lgbtq2018no,
-        lgbtq19no: lgbtq2019no,
-        lgbtq20no: lgbtq2020no,
 
         spHS18yes: spHS2018yes,
         spHS19yes: spHS2019yes,
@@ -2215,9 +2190,6 @@
         mena18yes: mena2018yes,
         mena19yes: mena2019yes,
         mena20yes: mena2020yes,
-        lgbtq18yes: lgbtq2018yes,
-        lgbtq19yes: lgbtq2019yes,
-        lgbtq20yes: lgbtq2020yes,
       }
 
 
@@ -2406,7 +2378,6 @@
           i["timber19"].push(ttimber19);
           i["timber20"].push(ttimber20);
         });
-
         // nature context
         datasets[18].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2434,7 +2405,6 @@
           i["nature19"].push(tnature19);
           i["nature20"].push(tnature20);
         });
-
         // ornr context
         datasets[19].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2462,7 +2432,6 @@
           i["ornr19"].push(tornr19);
           i["ornr20"].push(tornr20);
         });
-
         // student context
         datasets[20].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2518,7 +2487,6 @@
           i["stem19"].push(tstem19);
           i["stem20"].push(tstem20);
         });
-
         // food content
         datasets[22].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2546,7 +2514,6 @@
           i["food19"].push(tfood19);
           i["food20"].push(tfood20);
         });
-
         // sus content
         datasets[23].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2574,7 +2541,6 @@
           i["sus19"].push(tsus19);
           i["sus20"].push(tsus20);
         });
-
         // ss content
         datasets[24].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2602,7 +2568,6 @@
           i["ss19"].push(tss19);
           i["ss20"].push(tss20);
         });
-
         // art content
         datasets[25].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2630,7 +2595,6 @@
           i["art19"].push(tart19);
           i["art20"].push(tart20);
         });
-
         // pe content
         datasets[26].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2685,7 +2649,6 @@
           i["se19"].push(tse19);
           i["se20"].push(tse20);
         });
-
         // cwf content
         datasets[28].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2713,7 +2676,6 @@
           i["cwf19"].push(tcwf19);
           i["cwf20"].push(tcwf20);
         });
-
         // osmc content
         datasets[29].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2741,7 +2703,6 @@
           i["osmc19"].push(tosmc19);
           i["osmc20"].push(tosmc20);
         });
-
         // mm content
         datasets[30].forEach(function(d) {
           geo.push(d["Geography"]);
@@ -2770,7 +2731,7 @@
           i["mm20"].push(tmm20);
         });
 
-        // colcoo content
+        // colcoo insStrat
         datasets[31].forEach(function(d) {
           geo.push(d["Geography"]);
           tcolcoo18 = 0, tcolcoo19 = 0, tcolcoo20 = 0;
@@ -2797,7 +2758,7 @@
           i["colcoo19"].push(tcolcoo19);
           i["colcoo20"].push(tcolcoo20);
         });
-
+        // learner cenetered insStrat
         datasets[32].forEach(function(d) {
           geo.push(d["Geography"]);
           tlc18 = 0, tlc19 = 0, tlc20 = 0;
@@ -2824,7 +2785,7 @@
           i["lc19"].push(tlc19);
           i["lc20"].push(tlc20);
         });
-
+        // investigative insStrat
         datasets[33].forEach(function(d) {
           geo.push(d["Geography"]);
           tinv18 = 0, tinv19 = 0, tinv20 = 0;
@@ -2851,7 +2812,7 @@
           i["inv19"].push(tinv19);
           i["inv20"].push(tinv20);
         });
-
+        // reflective insStrat
         datasets[34].forEach(function(d) {
           geo.push(d["Geography"]);
           trefl18 = 0, trefl19 = 0, trefl20 = 0;
@@ -2878,7 +2839,7 @@
           i["refl19"].push(trefl19);
           i["refl20"].push(trefl20);
         });
-
+        // relevance insStrat
         datasets[35].forEach(function(d) {
           geo.push(d["Geography"]);
           trele18 = 0, trele19 = 0, trele20 = 0;
@@ -2905,7 +2866,7 @@
           i["rele19"].push(trele19);
           i["rele20"].push(trele20);
         });
-
+        // interdiciplinary insStrat
         datasets[36].forEach(function(d) {
           geo.push(d["Geography"]);
           tinterd18 = 0, tinterd19 = 0, tinterd20 = 0;
@@ -2933,6 +2894,7 @@
           i["interd20"].push(tinterd20);
         });
 
+        // hs support
         datasets[37].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -2983,7 +2945,7 @@
               break;
           };
         });
-
+        // trained support
         datasets[38].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3034,7 +2996,7 @@
               break;
           };
         });
-
+        // nr support
         datasets[39].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3085,7 +3047,7 @@
               break;
           };
         });
-
+        // commOrg support
         datasets[40].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3137,6 +3099,7 @@
           };
         });
 
+        // hs Instruction
         datasets[41].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3187,7 +3150,7 @@
               break;
           };
         });
-
+        // trained Instruction
         datasets[42].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3238,7 +3201,7 @@
               break;
           };
         });
-
+        // nr Instruction
         datasets[43].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3289,7 +3252,7 @@
               break;
           };
         });
-
+        // commOrg Instruction
         datasets[44].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3341,6 +3304,7 @@
           };
         });
 
+        // Rural Underresourced
         datasets[45].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3391,7 +3355,7 @@
               break;
           };
         });
-
+        // Low Ses Underresourced
         datasets[46].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3442,7 +3406,7 @@
               break;
           };
         });
-
+        // aian Underresourced
         datasets[47].forEach(function(d) {
           switch (d["Geography"]) {
             case "No":
@@ -3489,6 +3453,261 @@
                 i["aian18yes"].push(taian18yes);
                 i["aian19yes"].push(taian19yes);
                 i["aian20yes"].push(taian20yes);
+              }
+              break;
+          };
+        });
+        // asian Underresourced
+        datasets[48].forEach(function(d) {
+          switch (d["Geography"]) {
+            case "No":
+              tasian18no = 0, tasian19no = 0, tasian20no = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tasian20no += +items[2];
+                  case 2:
+                    tasian19no += +items[1];
+                  case 1:
+                    tasian18no += +items[0];
+                    break;
+                };
+                i["asian18no"].push(tasian18no);
+                i["asian19no"].push(tasian19no);
+                i["asian20no"].push(tasian20no);
+              }
+              break;
+            case "Yes":
+              tasian18yes = 0, tasian19yes = 0, tasian20yes = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tasian20yes += +items[2];
+                  case 2:
+                    tasian19yes += +items[1];
+                  case 1:
+                    tasian18yes += +items[0];
+                    break;
+                };
+                i["asian18yes"].push(tasian18yes);
+                i["asian19yes"].push(tasian19yes);
+                i["asian20yes"].push(tasian20yes);
+              }
+              break;
+          };
+        });
+        // nhpi Underresourced
+        datasets[49].forEach(function(d) {
+          switch (d["Geography"]) {
+            case "No":
+              tnhpi18no = 0, tnhpi19no = 0, tnhpi20no = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tnhpi20no += +items[2];
+                  case 2:
+                    tnhpi19no += +items[1];
+                  case 1:
+                    tnhpi18no += +items[0];
+                    break;
+                };
+                i["nhpi18no"].push(tnhpi18no);
+                i["nhpi19no"].push(tnhpi19no);
+                i["nhpi20no"].push(tnhpi20no);
+              }
+              break;
+            case "Yes":
+              tnhpi18yes = 0, tnhpi19yes = 0, tnhpi20yes = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tnhpi20yes += +items[2];
+                  case 2:
+                    tnhpi19yes += +items[1];
+                  case 1:
+                    tnhpi18yes += +items[0];
+                    break;
+                };
+                i["nhpi18yes"].push(tnhpi18yes);
+                i["nhpi19yes"].push(tnhpi19yes);
+                i["nhpi20yes"].push(tnhpi20yes);
+              }
+              break;
+          };
+        });
+        // black Underresourced
+        datasets[50].forEach(function(d) {
+          switch (d["Geography"]) {
+            case "No":
+              tblack18no = 0, tblack19no = 0, tblack20no = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tblack20no += +items[2];
+                  case 2:
+                    tblack19no += +items[1];
+                  case 1:
+                    tblack18no += +items[0];
+                    break;
+                };
+                i["black18no"].push(tblack18no);
+                i["black19no"].push(tblack19no);
+                i["black20no"].push(tblack20no);
+              }
+              break;
+            case "Yes":
+              tblack18yes = 0, tblack19yes = 0, tblack20yes = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tblack20yes += +items[2];
+                  case 2:
+                    tblack19yes += +items[1];
+                  case 1:
+                    tblack18yes += +items[0];
+                    break;
+                };
+                i["black18yes"].push(tblack18yes);
+                i["black19yes"].push(tblack19yes);
+                i["black20yes"].push(tblack20yes);
+              }
+              break;
+          };
+        });
+        // latinx Underresourced
+        datasets[51].forEach(function(d) {
+          switch (d["Geography"]) {
+            case "No":
+              tlatinx18no = 0, tlatinx19no = 0, tlatinx20no = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tlatinx20no += +items[2];
+                  case 2:
+                    tlatinx19no += +items[1];
+                  case 1:
+                    tlatinx18no += +items[0];
+                    break;
+                };
+                i["latinx18no"].push(tlatinx18no);
+                i["latinx19no"].push(tlatinx19no);
+                i["latinx20no"].push(tlatinx20no);
+              }
+              break;
+            case "Yes":
+              tlatinx18yes = 0, tlatinx19yes = 0, tlatinx20yes = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tlatinx20yes += +items[2];
+                  case 2:
+                    tlatinx19yes += +items[1];
+                  case 1:
+                    tlatinx18yes += +items[0];
+                    break;
+                };
+                i["latinx18yes"].push(tlatinx18yes);
+                i["latinx19yes"].push(tlatinx19yes);
+                i["latinx20yes"].push(tlatinx20yes);
+              }
+              break;
+          };
+        });
+        // mena Underresourced
+        datasets[52].forEach(function(d) {
+          switch (d["Geography"]) {
+            case "No":
+              tmena18no = 0, tmena19no = 0, tmena20no = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tmena20no += +items[2];
+                  case 2:
+                    tmena19no += +items[1];
+                  case 1:
+                    tmena18no += +items[0];
+                    break;
+                };
+                i["mena18no"].push(tmena18no);
+                i["mena19no"].push(tmena19no);
+                i["mena20no"].push(tmena20no);
+              }
+              break;
+            case "Yes":
+              tmena18yes = 0, tmena19yes = 0, tmena20yes = 0;
+              current = d;
+              if (i["name"] = "Oregon") {
+                d = current[i["name"]];
+                if (d == undefined) {
+                  d = "0"
+                };
+                items = d.split("-");
+                switch (items.length) {
+                  case 3:
+                    tmena20yes += +items[2];
+                  case 2:
+                    tmena19yes += +items[1];
+                  case 1:
+                    tmena18yes += +items[0];
+                    break;
+                };
+                i["mena18yes"].push(tmena18yes);
+                i["mena19yes"].push(tmena19yes);
+                i["mena20yes"].push(tmena20yes);
               }
               break;
           };
@@ -5780,6 +5999,110 @@
         bindto: "#aianChart"
       });
 
+      asianChart = c3.generate({
+        data: {
+          // iris data from R
+          columns: [
+            ['Yes', oregon.asian20yes[1]],
+            ['No', oregon.asian20no[1]],
+          ],
+          type: 'pie',
+          onclick: function(d, i) {
+            console.log("onclick", d, i);
+          },
+          onmouseover: function(d, i) {
+            console.log("onmouseover", d, i);
+          },
+          onmouseout: function(d, i) {
+            console.log("onmouseout", d, i);
+          }
+        },
+        bindto: "#asianChart"
+      });
+
+      nhpiChart = c3.generate({
+        data: {
+          // iris data from R
+          columns: [
+            ['Yes', oregon.nhpi20yes[1]],
+            ['No', oregon.nhpi20no[1]],
+          ],
+          type: 'pie',
+          onclick: function(d, i) {
+            console.log("onclick", d, i);
+          },
+          onmouseover: function(d, i) {
+            console.log("onmouseover", d, i);
+          },
+          onmouseout: function(d, i) {
+            console.log("onmouseout", d, i);
+          }
+        },
+        bindto: "#nhpiChart"
+      });
+
+      blackChart = c3.generate({
+        data: {
+          // iris data from R
+          columns: [
+            ['Yes', oregon.black20yes[1]],
+            ['No', oregon.black20no[1]],
+          ],
+          type: 'pie',
+          onclick: function(d, i) {
+            console.log("onclick", d, i);
+          },
+          onmouseover: function(d, i) {
+            console.log("onmouseover", d, i);
+          },
+          onmouseout: function(d, i) {
+            console.log("onmouseout", d, i);
+          }
+        },
+        bindto: "#blackChart"
+      });
+
+      latinxChart = c3.generate({
+        data: {
+          // iris data from R
+          columns: [
+            ['Yes', oregon.latinx20yes[1]],
+            ['No', oregon.latinx20no[1]],
+          ],
+          type: 'pie',
+          onclick: function(d, i) {
+            console.log("onclick", d, i);
+          },
+          onmouseover: function(d, i) {
+            console.log("onmouseover", d, i);
+          },
+          onmouseout: function(d, i) {
+            console.log("onmouseout", d, i);
+          }
+        },
+        bindto: "#latinChart"
+      });
+
+      menaChart = c3.generate({
+        data: {
+          // iris data from R
+          columns: [
+            ['Yes', oregon.mena20yes[1]],
+            ['No', oregon.mena20no[1]],
+          ],
+          type: 'pie',
+          onclick: function(d, i) {
+            console.log("onclick", d, i);
+          },
+          onmouseover: function(d, i) {
+            console.log("onmouseover", d, i);
+          },
+          onmouseout: function(d, i) {
+            console.log("onmouseout", d, i);
+          }
+        },
+        bindto: "#menaChart"
+      });
 
       /* When the user clicks on the button,
       toggle between hiding and showing the dropdown content */
@@ -6373,6 +6696,41 @@
           columns: [
             ['Yes', oregon.aian20yes[1]],
             ['No', oregon.aian20no[1]],
+          ],
+        });
+        asianChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.asian20yes[1]],
+            ['No', oregon.asian20no[1]],
+          ],
+        });
+        nhpiChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.nhpi20yes[1]],
+            ['No', oregon.nhpi20no[1]],
+          ],
+        });
+        blackChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.black20yes[1]],
+            ['No', oregon.black20no[1]],
+          ],
+        });
+        latinxChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.latinx20yes[1]],
+            ['No', oregon.latinx20no[1]],
+          ],
+        });
+        menaChart.load({
+          unload: true,
+          columns: [
+            ['Yes', oregon.mena20yes[1]],
+            ['No', oregon.mena20no[1]],
           ],
         });
       });
